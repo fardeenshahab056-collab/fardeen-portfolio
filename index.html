@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a1222">
+<meta name="description" content="Fardeen Shahab helps businesses build clearer customer journeys through GoHighLevel CRM, funnels, automation, and AI-assisted lead management.">
+<title>Fardeen Shahab — GoHighLevel & CRM Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a1222;--bg-soft:#0d192c;--surface:#101f35;--surface-2:#142640;
+  --ink:#f5f7fb;--muted:#a8b5c8;--subtle:#71829a;
+  --accent:#64d9e8;--accent-2:#82e6ed;--line:rgba(184,204,230,.14);
+  --line-hover:rgba(100,217,232,.48);--radius:20px;--max:1160px;
+  --shadow:0 24px 80px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:28px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;font-size:15px;line-height:1.7;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 80% -10%,rgba(100,217,232,.09),transparent 34%),radial-gradient(ellipse at 0% 30%,rgba(104,146,213,.08),transparent 32%)}
+a{color:inherit;text-decoration:none}
+button,a{-webkit-tap-highlight-color:transparent}
+button{font:inherit}
+.container{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+h1,h2,h3,h4,p{margin-top:0}
+h1,h2,h3{font-family:Manrope,sans-serif}
+h2{font-size:clamp(30px,4vw,45px);line-height:1.16;letter-spacing:-.045em;margin-bottom:15px}
+p{color:var(--muted)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--accent);font-size:11px;letter-spacing:.17em;text-transform:uppercase;font-weight:700}
+.eyebrow:before{content:"";width:23px;height:1px;background:var(--accent)}
+/* navigation */
+.site-header{position:sticky;top:0;z-index:20;background:rgba(10,18,34,.84);backdrop-filter:blur(18px);border-bottom:1px solid rgba(184,204,230,.09)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:inline-flex;align-items:center;gap:12px;font-family:Manrope,sans-serif;font-weight:800;font-size:14px;letter-spacing:-.02em}
+.brand-mark{width:38px;height:38px;display:grid;place-items:center;border:1px solid rgba(100,217,232,.5);border-radius:12px;color:var(--accent);font-size:12px;letter-spacing:.02em;background:rgba(100,217,232,.07)}
+.brand-name span{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:27px;color:#bdc8d8;font-size:12px;font-weight:600}
+.nav-links a{transition:color .2s ease}
+.nav-links a:hover{color:var(--accent)}
+.nav-contact{border:1px solid var(--line);padding:10px 14px;border-radius:10px}
+.menu-toggle{display:none;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:10px;padding:8px 10px}
+/* buttons */
+.btn{min-height:46px;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 17px;border-radius:11px;font-size:12px;font-weight:700;letter-spacing:.01em;border:1px solid transparent;transition:transform .25s ease,border-color .25s ease,background .25s ease,color .25s ease,box-shadow .25s ease}
+.btn:hover{transform:translateY(-3px)}
+.btn-primary{background:var(--accent);color:#071321;box-shadow:0 7px 24px rgba(100,217,232,.12)}
+.btn-primary:hover{background:var(--accent-2);box-shadow:0 12px 32px rgba(100,217,232,.2)}
+.btn-secondary{background:rgba(255,255,255,.025);border-color:var(--line);color:var(--ink)}
+.btn-secondary:hover{border-color:var(--line-hover);background:rgba(100,217,232,.055)}
+.arrow{display:inline-block;transition:transform .2s ease}
+.btn:hover .arrow,.text-link:hover .arrow{transform:translate(3px,-2px)}
+/* hero */
+.hero{padding:92px 0 78px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);align-items:center;gap:64px}
+.hero-kicker{display:inline-flex;align-items:center;gap:9px;padding:7px 11px;border:1px solid var(--line);border-radius:99px;color:#c4d0e0;background:rgba(255,255,255,.02);font-size:11px;margin-bottom:23px}
+.kicker-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px rgba(100,217,232,.65)}
+.hero h1{font-size:clamp(44px,5.7vw,72px);line-height:1.045;letter-spacing:-.065em;margin-bottom:23px;max-width:700px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-copy{font-size:16px;line-height:1.85;max-width:590px;margin-bottom:27px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-note{margin-top:21px!important;font-size:11px;color:var(--subtle)!important}
+.hero-note span{color:#c2d0e0}
+.hero-art{position:relative;min-height:440px;display:flex;align-items:center;justify-content:center}
+.art-glow{position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(100,217,232,.09);filter:blur(65px)}
+.art-frame{position:relative;width:100%;max-width:470px;padding:22px;border:1px solid rgba(184,204,230,.17);border-radius:25px;background:linear-gradient(150deg,rgba(19,37,61,.96),rgba(11,24,42,.98));box-shadow:var(--shadow);transform:rotate(1deg);transition:transform .45s ease,border-color .3s ease}
+.art-frame:hover{transform:rotate(0) translateY(-5px);border-color:var(--line-hover)}
+.art-top{display:flex;align-items:center;justify-content:space-between;padding:1px 2px 18px;border-bottom:1px solid var(--line);color:var(--muted);font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.window-dots{display:flex;gap:5px}.window-dots i{width:6px;height:6px;border-radius:50%;background:#61748c}
+.art-title{padding:21px 0 4px;font-family:Manrope,sans-serif;font-weight:700;font-size:18px;letter-spacing:-.03em}
+.art-subtitle{font-size:11px;color:var(--muted);margin-bottom:22px}
+.journey{display:grid;grid-template-columns:1fr 20px 1fr 20px 1fr;align-items:center;gap:5px}
+.journey-step{padding:14px 8px;text-align:center;border:1px solid rgba(100,217,232,.18);border-radius:12px;background:rgba(100,217,232,.035);font-size:10px;color:#e4edf8}
+.journey-step svg{display:block;width:20px;height:20px;margin:0 auto 9px;color:var(--accent)}
+.journey-arrow{text-align:center;color:var(--accent);font-size:15px}
+.art-divider{height:1px;background:var(--line);margin:22px 0 17px}
+.art-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.art-bottom strong{display:block;font-family:Manrope,sans-serif;font-size:12px}
+.art-bottom span{display:block;font-size:10px;color:var(--muted);margin-top:2px}
+.art-badge{display:flex;align-items:center;gap:7px;color:var(--accent);font-size:10px;white-space:nowrap}
+.art-badge svg{width:15px;height:15px}
+.floating-note{position:absolute;bottom:13px;left:-18px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#11233a;box-shadow:var(--shadow);display:flex;align-items:center;gap:11px;animation:float 5s ease-in-out infinite}
+.floating-icon{width:34px;height:34px;border-radius:10px;background:rgba(100,217,232,.09);display:grid;place-items:center;color:var(--accent)}
+.floating-icon svg{width:17px;height:17px}
+.floating-note strong{font-size:11px;display:block}.floating-note span{font-size:10px;color:var(--muted);display:block}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+/* credibility */
+.credibility{border-block:1px solid var(--line);background:rgba(255,255,255,.015)}
+.cred-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.cred-item{padding:23px 22px;border-right:1px solid var(--line)}
+.cred-item:first-child{padding-left:0}.cred-item:last-child{border:0}
+.cred-item strong{font-family:Manrope,sans-serif;font-size:15px;display:block;letter-spacing:-.02em}
+.cred-item span{display:block;color:var(--muted);font-size:11px;margin-top:4px}
+/* general sections */
+.section{padding:88px 0}
+.section-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:34px}
+.section-heading .heading-copy{max-width:590px}
+.section-heading .intro{max-width:420px;margin-bottom:4px;font-size:13px}
+.section-heading h2{margin-top:12px;margin-bottom:0}
+.section-heading .eyebrow{margin-bottom:1px}
+/* about */
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:75px;align-items:start}
+.about-intro h2{margin-top:13px}
+.about-intro p{font-size:14px;line-height:1.9}
+.about-quote{border-left:2px solid var(--accent);padding:3px 0 3px 17px;margin-top:25px;color:#dce6f2;font-family:Manrope,sans-serif;font-size:14px;line-height:1.65}
+.value-list{display:grid;gap:12px}
+.value-item{display:grid;grid-template-columns:42px 1fr;gap:15px;padding:17px 18px;border:1px solid var(--line);border-radius:15px;background:rgba(16,31,53,.56);transition:transform .25s,border-color .25s,background .25s}
+.value-item:hover{transform:translateX(4px);border-color:var(--line-hover);background:rgba(20,38,64,.72)}
+.icon-box{width:42px;height:42px;display:grid;place-items:center;color:var(--accent);background:rgba(100,217,232,.075);border:1px solid rgba(100,217,232,.13);border-radius:12px}
+.icon-box svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.value-item h3{font-size:13px;margin:2px 0 4px;letter-spacing:-.01em}
+.value-item p{font-size:11px;line-height:1.7;margin:0}
+/* services */
+.services-section{background:linear-gradient(180deg,rgba(255,255,255,.012),transparent)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.service-card{padding:24px 23px 22px;border:1px solid var(--line);border-radius:17px;background:rgba(16,31,53,.48);transition:transform .28s ease,border-color .28s ease,background .28s ease,box-shadow .28s ease}
+.service-card:hover{transform:translateY(-5px);border-color:var(--line-hover);background:rgba(18,39,64,.78);box-shadow:0 15px 38px rgba(0,0,0,.15)}
+.service-card .icon-box{margin-bottom:20px}
+.service-card h3{font-size:15px;letter-spacing:-.025em;margin-bottom:8px}
+.service-card p{font-size:12px;line-height:1.8;margin-bottom:0}
+.service-number{float:right;color:var(--subtle);font-size:10px;letter-spacing:.12em}
+/* approach */
+.approach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;counter-reset:approach}
+.approach-card{position:relative;padding:22px 20px;border-top:1px solid var(--line-hover);background:linear-gradient(180deg,rgba(100,217,232,.045),rgba(255,255,255,.012));border-radius:0 0 15px 15px;transition:background .25s}
+.approach-card:hover{background:rgba(100,217,232,.065)}
+.approach-card:before{counter-increment:approach;content:"0" counter(approach);font-family:Manrope,sans-serif;color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.12em}
+.approach-card h3{font-size:14px;margin:16px 0 7px}
+.approach-card p{font-size:11px;line-height:1.8;margin:0}
+/* industries - editorial list, not tag cloud */
+.industries-section{border-block:1px solid var(--line);background:rgba(255,255,255,.012)}
+.industries-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:start}
+.industries-copy h2{margin-top:13px}
+.industries-copy p{font-size:13px;line-height:1.9}
+.industry-list{display:grid;grid-template-columns:repeat(2,1fr);column-gap:28px}
+.industry-item{display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);font-family:Manrope,sans-serif;font-weight:600;font-size:13px;color:#e0e8f3;transition:color .2s,padding .2s}
+.industry-item:hover{color:var(--accent);padding-left:5px}
+.industry-index{font-size:10px;color:var(--subtle);letter-spacing:.1em;width:22px}
+.industry-arrow{margin-left:auto;color:var(--subtle);transition:transform .2s,color .2s}
+.industry-item:hover .industry-arrow{transform:translate(2px,-2px);color:var(--accent)}
+/* portfolio */
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.project-card{position:relative;overflow:hidden;padding:27px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(145deg,rgba(18,37,61,.78),rgba(12,26,45,.78));display:flex;flex-direction:column;min-height:340px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.project-card:hover{transform:translateY(-5px);border-color:var(--line-hover);box-shadow:0 20px 45px rgba(0,0,0,.18)}
+.project-card:after{content:"";position:absolute;width:180px;height:180px;right:-120px;top:-120px;border-radius:50%;background:rgba(100,217,232,.08);transition:transform .4s}
+.project-card:hover:after{transform:scale(1.8)}
+.project-top{position:relative;z-index:1;display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:27px}
+.project-category{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700}
+.project-mark{width:38px;height:38px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;color:var(--accent);background:rgba(255,255,255,.02)}
+.project-mark svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.project-card h3{position:relative;z-index:1;font-size:22px;line-height:1.3;letter-spacing:-.04em;margin-bottom:12px;max-width:450px}
+.project-problem{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--subtle);font-weight:700;margin-bottom:5px}
+.project-card p{font-size:12px;line-height:1.85;margin-bottom:18px;max-width:500px}
+.project-outcome{padding:13px 15px;border-left:2px solid var(--accent);background:rgba(100,217,232,.04);margin-top:auto}
+.project-outcome strong{display:block;font-size:11px;margin-bottom:3px;color:#e5f4f7}
+.project-outcome span{display:block;font-size:11px;color:var(--muted);line-height:1.7}
+.project-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:19px;padding-top:14px;border-top:1px solid var(--line);font-size:10px;color:var(--muted)}
+.project-foot a{color:var(--accent);font-weight:700;transition:gap .2s}
+.project-foot a:hover{letter-spacing:.02em}
+.portfolio-note{font-size:10px!important;color:var(--subtle)!important;margin-top:16px}
+/* CTA / footer */
+.contact-panel{position:relative;overflow:hidden;padding:48px;border:1px solid rgba(100,217,232,.25);border-radius:24px;background:linear-gradient(120deg,rgba(18,40,65,.96),rgba(12,27,46,.98))}
+.contact-panel:after{content:"";position:absolute;right:-70px;bottom:-170px;width:360px;height:360px;border-radius:50%;border:1px solid rgba(100,217,232,.14);box-shadow:0 0 0 35px rgba(100,217,232,.025),0 0 0 75px rgba(100,217,232,.02);pointer-events:none}
+.contact-inner{position:relative;z-index:1;max-width:730px}
+.contact-panel h2{margin-top:13px}
+.contact-panel p{font-size:13px;line-height:1.9;max-width:630px}
+.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.contact-hint{font-size:10px!important;color:var(--subtle)!important;margin-top:17px!important}
+.footer{padding:26px 0 32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--subtle);font-size:10px}
+.footer-brand{color:var(--ink);font-family:Manrope,sans-serif;font-weight:800;font-size:12px}
+.footer-links{display:flex;gap:18px}.footer a:hover{color:var(--accent)}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:900px){.hero{gap:35px;grid-template-columns:1fr 0.9fr;padding-top:72px}.hero h1{font-size:clamp(42px,6vw,59px)}.hero-art{min-height:390px}.cred-item{padding-inline:14px}.about-grid{gap:35px}.industries-layout{gap:35px}.approach-grid{grid-template-columns:repeat(2,1fr)}.service-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.container{width:calc(100% - 34px)}.nav{height:70px}.menu-toggle{display:inline-flex}.nav-links{display:none;position:absolute;left:17px;right:17px;top:70px;padding:15px;background:#0e1c30;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px 8px;border-bottom:1px solid var(--line)}.nav-links a:last-child{border-bottom:0}.nav-contact{text-align:center;margin-top:6px}.hero{grid-template-columns:1fr;padding:54px 0 55px;gap:22px}.hero h1{font-size:clamp(43px,10vw,61px)}.hero-copy{font-size:14px}.hero-art{min-height:360px}.art-frame{max-width:500px}.floating-note{left:-4px;bottom:0}.cred-grid{grid-template-columns:repeat(2,1fr)}.cred-item{padding:17px 12px;border-bottom:1px solid var(--line)}.cred-item:nth-child(2){border-right:0}.cred-item:nth-child(3){padding-left:0;border-bottom:0}.cred-item:nth-child(4){border-bottom:0}.section{padding:62px 0}.section-heading{display:block;margin-bottom:26px}.section-heading .intro{margin-top:13px}.about-grid,.industries-layout{grid-template-columns:1fr;gap:25px}.portfolio-grid{grid-template-columns:1fr}.project-card{min-height:300px}.industry-list{column-gap:20px}.contact-panel{padding:30px 23px}}
+@media(max-width:460px){.hero-art{min-height:320px}.art-frame{padding:15px}.journey{grid-template-columns:1fr 12px 1fr 12px 1fr;gap:2px}.journey-step{padding:10px 3px;font-size:9px}.art-title{font-size:16px}.art-subtitle{font-size:10px}.floating-note{padding:10px 12px}.floating-note strong{font-size:10px}.floating-note span{font-size:9px}.service-grid{grid-template-columns:1fr}.approach-grid{grid-template-columns:1fr 1fr}.industry-list{grid-template-columns:1fr}.project-card{padding:22px}.footer{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}.hero-actions .btn{flex:1}.cred-item strong{font-size:13px}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Fardeen Shahab home"><span class="brand-mark">FS</span><span class="brand-name">Fardeen Shahab<span>.</span></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" id="menuToggle">Menu ☰</button>
+    <nav class="nav-links" id="navigation" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#industries">Industries</a><a href="#work">Selected work</a><a class="nav-contact" href="#contact">Let’s talk <span class="arrow">↗</span></a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="container hero" id="home">
+  <div class="hero-content">
+    <div class="hero-kicker"><span class="kicker-dot"></span> GoHighLevel Specialist · CRM & Automation</div>
+    <h1>I turn disconnected processes into <em>connected systems.</em></h1>
+    <p class="hero-copy">I help businesses and agencies create a smoother journey from first enquiry to follow-up. From CRM structure and conversion-focused funnels to thoughtful automation, I build GoHighLevel systems around the way your business actually works.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#work">Explore my work <span class="arrow">↗</span></a><a class="btn btn-secondary" href="#contact">Let’s discuss your project</a></div>
+    <p class="hero-note"><span>3+ years of GoHighLevel experience</span> · CRM systems · Funnels · Automation · AI-assisted lead handling</p>
+  </div>
+  <div class="hero-art" aria-label="Illustration of a connected customer journey">
+    <div class="art-glow"></div>
+    <div class="art-frame">
+      <div class="art-top"><span>Customer journey / system design</span><span class="window-dots"><i></i><i></i><i></i></span></div>
+      <div class="art-title">Every step has a purpose.</div><div class="art-subtitle">A clearer path for your leads and your team.</div>
+      <div class="journey">
+        <div class="journey-step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg>Capture</div>
+        <div class="journey-arrow">→</div>
+        <div class="journey-step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6M7 17h4"/></svg>Organize</div>
+        <div class="journey-arrow">→</div>
+        <div class="journey-step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 10-13h-7z"/></svg>Automate</div>
+      </div>
+      <div class="art-divider"></div>
+      <div class="art-bottom"><div><strong>Designed around your process</strong><span>Practical logic. Clear handoffs. Better visibility.</span></div><div class="art-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg>Connected</div></div>
+    </div>
+    <div class="floating-note"><div class="floating-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="8"/></svg></div><div><strong>Built for real workflows</strong><span>Not one-size-fits-all templates</span></div></div>
+  </div>
+</section>
+
+<section class="credibility"><div class="container cred-grid">
+  <div class="cred-item"><strong>3+ years</strong><span>GoHighLevel experience</span></div>
+  <div class="cred-item"><strong>Strategy to setup</strong><span>From process mapping to implementation</span></div>
+  <div class="cred-item"><strong>Automation with purpose</strong><span>Useful, business-led workflow logic</span></div>
+  <div class="cred-item"><strong>Cross-industry experience</strong><span>Systems adapted to different niches</span></div>
+</div></section>
+
+<section class="container section" id="about">
+  <div class="about-grid">
+    <div class="about-intro reveal"><span class="eyebrow">A little about me</span><h2>Good automation starts with understanding the business.</h2>
+      <p>I’m a GoHighLevel specialist focused on building the structure behind a reliable customer journey. I work across CRM setup, funnel development, workflow logic, messaging, and reporting, connecting the pieces into a system a team can actually use.</p>
+      <p>My approach is to understand the objective first, map the process, and then build around the rules that matter. The goal isn’t to add automation everywhere. It’s to make the right next step clearer, more consistent, and easier to manage.</p>
+      <div class="about-quote">“The best system is one that makes the next step obvious for both the customer and the team.”</div>
+    </div>
+    <div class="value-list reveal">
+      <article class="value-item"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></div><div><h3>Built around your process</h3><p>I translate business requirements into a practical CRM structure and workflow logic, instead of forcing the team into a generic setup.</p></div></article>
+      <article class="value-item"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M4 12h5l3-8 3 16 3-8h2"/></svg></div><div><h3>Clear customer journeys</h3><p>I connect landing pages, forms, calendars, pipelines, and follow-up so each step has a clear purpose.</p></div></article>
+      <article class="value-item"><div class="icon-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></div><div><h3>Reliable workflow logic</h3><p>I consider branches, exit conditions, edge cases, and testing so automations behave as intended.</p></div></article>
+      <article class="value-item"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16"/><path d="m7 15 4-4 3 2 5-7"/></svg></div><div><h3>Visibility for the team</h3><p>I organize stages, records, saved views, and reporting to make it easier to understand what needs attention.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="services-section"><div class="container section" id="services">
+  <div class="section-heading reveal"><div class="heading-copy"><span class="eyebrow">How I can help</span><h2>Practical systems. Thoughtful execution.</h2></div><p class="intro">Whether you need a complete setup or improvements to an existing account, I can help connect the parts of your customer journey.</p></div>
+  <div class="service-grid">
+    <article class="service-card reveal"><span class="service-number">01</span><div class="icon-box"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div><h3>CRM Setup & Architecture</h3><p>Pipelines, custom fields, opportunity stages, contact organization, SmartLists, and dashboards that reflect the real operation.</p></article>
+    <article class="service-card reveal"><span class="service-number">02</span><div class="icon-box"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 8h8M8 12h5M8 16h7"/></svg></div><h3>Funnels & Landing Pages</h3><p>Conversion-focused page journeys, forms, thank-you pages, booking flows, and custom HTML, CSS, or JavaScript when required.</p></article>
+    <article class="service-card reveal"><span class="service-number">03</span><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 10-13h-7z"/></svg></div><h3>Workflow Automation</h3><p>Lead routing, follow-up sequences, appointment reminders, task creation, internal notifications, and lifecycle updates.</p></article>
+    <article class="service-card reveal"><span class="service-number">04</span><div class="icon-box"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><h3>Email & SMS Journeys</h3><p>Campaigns, confirmations, event communication, nurture sequences, and timely messages connected to contact status.</p></article>
+    <article class="service-card reveal"><span class="service-number">05</span><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M12 3a7 7 0 0 0-7 7v4a3 3 0 0 0 3 3h1v-6H7"/><path d="M12 3a7 7 0 0 1 7 7v4a3 3 0 0 1-3 3h-1v-6h2"/><path d="M10 21h4"/></svg></div><h3>AI-Assisted Lead Handling</h3><p>AI chat and voice-agent configurations to support enquiry handling and fit into the wider CRM journey.</p></article>
+    <article class="service-card reveal"><span class="service-number">06</span><div class="icon-box"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/><circle cx="12" cy="12" r="9"/></svg></div><h3>QA & Workflow Refinement</h3><p>Scenario-based testing, troubleshooting, logic validation, documentation, and improvements to existing automations.</p></article>
+  </div>
+</div></section>
+
+<section class="container section">
+  <div class="section-heading reveal"><div class="heading-copy"><span class="eyebrow">My working process</span><h2>From business requirement to working system.</h2></div><p class="intro">A clear implementation process helps keep the build purposeful, maintainable, and aligned with the result you need.</p></div>
+  <div class="approach-grid">
+    <article class="approach-card reveal"><h3>Understand the goal</h3><p>Clarify the business objective, customer journey, team handoffs, and the problems the system should solve.</p></article>
+    <article class="approach-card reveal"><h3>Map the process</h3><p>Plan the stages, fields, entry points, conditions, communication, and exceptions before connecting the logic.</p></article>
+    <article class="approach-card reveal"><h3>Build & connect</h3><p>Implement the pages, CRM structure, workflows, messages, and reporting needed for the process.</p></article>
+    <article class="approach-card reveal"><h3>Test & refine</h3><p>Run relevant scenarios, verify expected outcomes, fix issues, and document how the system behaves.</p></article>
+  </div>
+</section>
+
+<section class="industries-section"><div class="container section" id="industries">
+  <div class="industries-layout">
+    <div class="industries-copy reveal"><span class="eyebrow">Industries I serve</span><h2>Different businesses. Different needs.</h2><p>I’ve worked across a range of niches, from appointment-driven businesses to home services and agencies. I adapt the setup to the way each business captures leads, manages customers, and follows up.</p><p>The common thread is building a clear process, not applying the same template to every industry.</p></div>
+    <div class="industry-list reveal">
+      <a class="industry-item" href="#contact"><span class="industry-index">01</span>Marketing & agencies <span class="industry-arrow">↗</span></a>
+      <a class="industry-item" href="#contact"><span class="industry-index">02</span>Beauty & salons <span class="industry-arrow">↗</span></a>
+      <a class="industry-item" href="#contact"><span class="industry-index">03</span>Schools & education <span class="industry-arrow">↗</span></a>
+      <a class="industry-item" href="#contact"><span class="industry-index">04</span>HVAC companies <span class="industry-arrow">↗</span></a>
+      <a class="industry-item" href="#contact"><span class="industry-index">05</span>Plumbing services <span class="industry-arrow">↗</span></a>
+      <a class="industry-item" href="#contact"><span class="industry-index">06</span>Automotive businesses <span class="industry-arrow">↗</span></a>
+      <a class="industry-item" href="#contact"><span class="industry-index">07</span>Roofing companies <span class="industry-arrow">↗</span></a>
+      <a class="industry-item" href="#contact"><span class="industry-index">08</span>Flooring companies <span class="industry-arrow">↗</span></a>
+    </div>
+  </div>
+</div></section>
+
+<section class="container section" id="work">
+  <div class="section-heading reveal"><div class="heading-copy"><span class="eyebrow">Selected work</span><h2>Business challenges, solved with systems.</h2></div><p class="intro">A few examples of how I’ve approached different client needs, from operational control and customer follow-up to lead management and event journeys.</p></div>
+  <div class="portfolio-grid">
+    <article class="project-card reveal">
+      <div class="project-top"><span class="project-category">Operations · Payment management</span><span class="project-mark"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span></div>
+      <div class="project-problem">The client needed</div><h3>A more dependable way to manage weekly payments and arrears.</h3>
+      <p>Payment checks, late fees, missed weeks, partial repayments, and staff follow-up all needed to work together without double-processing a payment cycle or losing sight of outstanding balances.</p>
+      <div class="project-outcome"><strong>How I addressed it</strong><span>I built and QA-tested a GoHighLevel workflow that routes payment outcomes, applies the agreed arrears and fee rules, triggers the appropriate communications and escalation tasks, and gives management a dashboard view of key account figures.</span></div>
+      <div class="project-foot"><span>Rent-to-Buy business · GoHighLevel</span><a href="#contact">Discuss this type of build ↗</a></div>
+    </article>
+    <article class="project-card reveal">
+      <div class="project-top"><span class="project-category">Operations · Vehicle lifecycle</span><span class="project-mark"><svg viewBox="0 0 24 24"><path d="M5 17h14l-1.5-6h-11z"/><path d="m7 11 2-4h6l2 4M7 17v2m10-2v2"/><circle cx="8" cy="15" r="1"/><circle cx="16" cy="15" r="1"/></svg></span></div>
+      <div class="project-problem">The client needed</div><h3>A clearer view of every vehicle and its next step.</h3>
+      <p>Managing stock through a day-to-day spreadsheet made it harder to follow each vehicle’s preparation, availability, handover, return, and maintenance status in one consistent place.</p>
+      <div class="project-outcome"><strong>How I addressed it</strong><span>I implemented a structured Vehicle Master in GoHighLevel, with individual vehicle records, lifecycle status logic, preparation progress, saved operational views, alerts, and connected customer and deal history.</span></div>
+      <div class="project-foot"><span>Vehicle business · GoHighLevel</span><a href="#contact">Discuss this type of build ↗</a></div>
+    </article>
+    <article class="project-card reveal">
+      <div class="project-top"><span class="project-category">Lead management · AI reception</span><span class="project-mark"><svg viewBox="0 0 24 24"><path d="M12 3a7 7 0 0 0-7 7v4a3 3 0 0 0 3 3h1v-6H7"/><path d="M12 3a7 7 0 0 1 7 7v4a3 3 0 0 1-3 3h-1v-6h2"/><path d="M10 21h4"/></svg></span></div>
+      <div class="project-problem">The client needed</div><h3>A joined-up way to handle new plumbing enquiries.</h3>
+      <p>Leads could arrive through calls, missed calls, texts, forms, and website chat. The business needed a consistent response and follow-up journey that could carry through to appointments and reviews.</p>
+      <div class="project-outcome"><strong>How I addressed it</strong><span>I built a GoHighLevel demo that brings lead capture, pipeline management, appointment communication, follow-up, AI chat and voice configurations, and post-job review requests into one connected process. The configured build was tested and confirmed working.</span></div>
+      <div class="project-foot"><span>Bob the Plumber demo · GoHighLevel</span><a href="#contact">Discuss this type of build ↗</a></div>
+    </article>
+    <article class="project-card reveal">
+      <div class="project-top"><span class="project-category">Marketing · Event journeys</span><span class="project-mark"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h3M8 17h6"/></svg></span></div>
+      <div class="project-problem">The client needed</div><h3>A repeatable way to promote monthly community events.</h3>
+      <p>The team needed to guide invitees from an event page to registration, understand who had responded, and send different reminders to confirmed attendees and people who had not replied.</p>
+      <div class="project-outcome"><strong>How I addressed it</strong><span>I created the event landing-page journey, registration form and thank-you page, then built a CRM pipeline and separate reminder sequences for confirmed attendees and non-responders.</span></div>
+      <div class="project-foot"><span>Empowering Marketing · GoHighLevel</span><a href="#contact">Discuss this type of build ↗</a></div>
+    </article>
+  </div>
+  <p class="portfolio-note">Project summaries focus on the client’s needs and the implementation. Results are described only where supported by the documented work; no unverified revenue or conversion claims are included.</p>
+</section>
+
+<section class="container section" id="contact">
+  <div class="contact-panel reveal"><div class="contact-inner"><span class="eyebrow">Have a project in mind?</span><h2>Let’s build a system that works for your business.</h2><p>If you need a cleaner CRM, a better lead journey, or automation that supports your team instead of adding complexity, tell me what you’re trying to improve. We can start with the problem and work toward the right setup.</p><div class="contact-actions"><a class="btn btn-primary" href="mailto:YOUR_EMAIL@example.com?subject=GoHighLevel%20Project%20Enquiry">Tell me about your project <span class="arrow">↗</span></a><a class="btn btn-secondary" href="#work">Review selected work</a></div><p class="contact-hint">Before publishing, replace the placeholder email with your professional email and add any LinkedIn or Upwork profile links you want to share.</p></div></div>
+</section>
+</main>
+<footer class="container footer"><a class="footer-brand" href="#home">Fardeen Shahab<span style="color:var(--accent)">.</span></a><span>GoHighLevel · CRM Systems · Automation</span><div class="footer-links"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact ↑</a></div></footer>
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const nav=document.getElementById('navigation');
+menuToggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'Close ×':'Menu ☰';});
+nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='Menu ☰';}));
+const revealObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+</script>
+</body>
+</html>
